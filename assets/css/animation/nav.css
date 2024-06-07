@@ -1,0 +1,39 @@
+.animation a
+{
+    padding: 10px 3px;
+    position: relative;
+}
+
+/* Pull up and down  */
+.animation a:before, .animation a:after
+{
+    position: absolute;
+    opacity: 0.5;
+    height: 100%;
+    width: 2px;
+    content: '';
+    background: #FFF;
+    transition: all 0.3s;
+}
+
+.animation a:before
+{
+    left: 0px;
+    top: 0px;
+} 
+
+.animation a:after
+{
+    right: 0px;
+    bottom: 0px;
+}
+
+.animation a:hover:before, .animation a:hover:after
+{
+    opacity: 1;
+    height: 2px;
+    width: 100%;
+}
+
+
+
